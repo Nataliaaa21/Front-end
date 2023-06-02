@@ -1,88 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS Externo 13/04, 03/05</title>
-    <link rel="stylsheet" href="formulario.css">
+    <title>contato</title>
+    <link rel="stylesheet" href="contato.css">
 </head>
 <body>
-    <header> <!--cabeçalho-->
+    <header> 
+        <img id="logo" src="comaretto.png">
+        <h1 class="titulo-principal">Produtos de cabelo</h1>
+
      </header>
 
-    <main> <!--meio--> 
-        <section class="box">
-            <form>
-                <fieldset>
-                    <legend><strong>Formulário de Clientes</strong></legend>
-                        <br>
-                        <section class="inputBox">
-                            <input type="text" name="nome" id="nome" class=
-                            "InputUser" required>
-                            <label for="nome" class="labelinput">Nome Completo</label>
-                        </section>
-                        <br><br>
+    <main> 
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome </label>
+            <input type="text" name="nome" id="nomesobrenome"
+            class="input-padrao" placeholder="Seu nome e sobrenome" required>
 
-                        <section class="inputBox">
-                            <input type="tel" name="telefone" id="telefone"
-                            class="inputUser" required placeholder="seuemail@dominio.com">
-                            <label for="email" class="labeinput">Email</label>
-                        </section>
-                        <br><br>
-                        <section class="inputBox">
-                            <input type="tel" name="telefone" id="telefone" class= "inputUser" 
-                            required placeholder="(XX) XXXXX-XXXX">
-                            <label for="telefone" class="labeinput">Telefone</label>
-                        </section>
-
-                        <p>Sexo</p>
-                        <input type="radio" id="masculino" name="genero" value="masculino">
-                        <label for="masculino" class="labeinput"></label>Masculino
-                        <br>
-                        <input type="radio" id="feminino" name="genero" value="feminino" required></input>
-                        <label for="feminino">Feminino</label>
-                        <br>
-                        <input type="radio" id="outro" name="genero" value="outro" required></input>
-                        <label for="outro">Outro</label>
-                        <br><br>
-                        <label for="data_nascimento"><strong>Ano de Nascimento</strong></label>
-                        <input type="date" name="data_nascimento" id="data_nascimento" required>
-                        <br><br><br>
-
-                        <section>
-                            <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                            <label for="cidade" class="inputUser">Cidade</label>
-                        </section>
-                        <br><br>
-
-                        <section>
-                            <input type="text" name="estado" id="estado" class="inputUser" required>
-                            <label for="estado" class="inputUser">Estado</label>
-                        </section>
-                        <br><br>
-
-                        <section>
-                            <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                            <label for="endereco" class="inputUser">Endereço</label>
-                        </section>
-                        <br><br>
-
-                        <input type="submit" value="Enviar formulário" id="enviar">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"
+            class="input-padrao" placeholder="seuemail@dominio.com" required>
 
 
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone"
+            class="input-padrao" placeholder="(XX) XXXXX-XXXX" required>
 
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem"
+            placeholder="Digite seu texto aqui" required></textarea>
 
+            <section>
+                <p>Como prefere nosso contato?</p>
 
+                <label for="radio-email"><input type="radio"
+                name="contato" value="email" id="radio-email">Email</label> 
 
+                <label for="radio-telefone"><input type="radio"
+                    name="contato" value="telefone" id="radio-telefone">Telefone</label> 
 
+                <label for="radio-whatsapp"><input type="radio"
+                name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+            </section>
 
+            <section>
+                <p>Qual horário prefere ser atendido?</p>
+                <select>
+                    <option>Manhã</option>
+                    <!--dropdown - seleções selecionáveis-->
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </section>
 
-                    </legend>
-                </fieldset>
-            </form>
-        </section>
-     </main>
+            <label class="checkbox">
+                <input type="checkbox">Gostaria de receber nossas novidades por email?
+            </label>
 
-    <footer> <!--rodapé--> 
-     </footer>
+            <input type="submit" value="Enviar formulário" class="enviar">
+        
+        </form>
+    </main>
+
+    <footer>
+        <img id="logo1" src="petshop.png">
+        <p class="copyright">&copy; Copyright -- Natália Rodrigues</p>
+    </footer>
+
+    
 </body>
 </html>
