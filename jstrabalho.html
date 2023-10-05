@@ -17,7 +17,7 @@
             padding: 70px 70px;
             margin: 10px;
             background-color: #eb2525;
-            color: #fff;
+            color: #000000;
             border: none;
             cursor: pointer;
             border-radius: 5px;
@@ -30,7 +30,7 @@
             padding: 70px 70px;
             margin: 10px;
             background-color: #7CFC00;
-            color: #fff;
+            color: #000000;
             border: none;
             cursor: pointer;
             border-radius: 5px;
@@ -43,7 +43,7 @@
             padding: 70px 70px;
             margin: 10px;
             background-color: #b1418f;
-            color: #fff;
+            color: #020202;
             border: none;
             cursor: pointer;
             border-radius: 5px;
@@ -75,15 +75,56 @@
     <h1>BOTÕES</h1>
     <div class="container">
         <div class="button1">
-        <button class="button1" onclick="window.open('https://www.theuncomfortable.com/')">Comfortable</button>
+        <button class="button1" id=1 onclick="window.open('https://monitor7.r7.com/e-farsas/garoto-morre-apos-se-masturbar-42-vezes-sera-verdade-30072021')" onmouseenter="entrar(1)" onmouseout="sair(1)">NOTICIA</button>
         </div>
         <div class="button2">
-        <button class="button2" onclick="window.open('https://papertoilet.com/')">Paper Toilet</button>
+        <button class="button2" id=2 onclick="window.open('https://papertoilet.com/')" onmouseenter="entrar1(2)" onmouseout="sair1(2)">PAPEL</button>
         </div>
         <div class="button3">
-        <button class="button3" onclick="window.open('https://geekprank.com/hacker/simulador-pt/')">Hacker</button>
+        <button class="button3" id=3 onclick="window.open('https://geekprank.com/hacker/simulador-pt/')" onmouseenter="entrar2(3)" onmouseout="sair2(3)">HACKER</button>
         </div>
     </div>
 </body>    
-
+ <script>
+        function clicar(botao){
+            var a = window.document.getElementById(botao)
+            a.style.background='gray'
+            object.style.textAlign = "center"
+        }
+        function entrar(botao){
+            var e = window.document.getElementById(botao)
+            e.style.background='red'
+        }
+        function sair(botao){
+            var s = window.document.getElementById(botao)
+            s.style.background='white'
+        }
+        function clicar1(botao){
+            var a = window.document.getElementById(botao)
+            a.style.background='gray'
+            object.style.textAlign = "center"
+        }
+        function entrar1(botao){
+            var e = window.document.getElementById(botao)
+            e.style.background='GREEN'
+        }
+        function sair1(botao){
+            var s = window.document.getElementById(botao)
+            s.style.background='white'
+        }
+        function clicar2(botao){
+            var a = window.document.getElementById(botao)
+            a.style.background='gray'
+            object.style.textAlign = "center"
+        }
+        function entrar2(botao){
+            var e = window.document.getElementById(botao)
+            e.style.background='PURPLE'
+        }
+        function sair2(botao){
+            var s = window.document.getElementById(botao)
+            s.style.background='white'
+        }
+    </script>
+</body>
 </html>
